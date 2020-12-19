@@ -1,6 +1,6 @@
 # password-generator
 
-A simple password generator that produces a password form 8 to 128 characters in length. It has the capabilities to add the optins of lowercase and uppercase characters, numeric values, and a range of special characters.
+A simple password generator that produces a password form 8 to 128 characters in length. It has the capabilities to add lowercase and uppercase characters, numeric values, and a range of special characters.
 
 ## Getting Started
 
@@ -23,6 +23,8 @@ Cloning repository to local directory
 - [Live site link](https://jbrown827.github.io/password-generator/)
 
 ## Code Snipets
+
+![alt text](./img/screenshot.jpg)
 
 ```
 function generatePassword() {
@@ -48,3 +50,5 @@ function generatePassword() {
   - [Link to Portfolio]()
   - [Link to GitHub](https://github.com/jbrown827)
   - [Link to LinkedIn](https://www.linkedin.com/in/jaja-brown-a42261201/)
+
+## Acknowledgments

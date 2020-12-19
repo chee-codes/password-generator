@@ -134,6 +134,14 @@ function generatePassword() {
         pWord += charOpF.charAt(Math.floor(Math.random() * charOpF.length));
 
         // singles
+      } else if (alphaLow) {
+        pWord += lower.charAt(Math.floor(Math.random() * lower.length));
+      } else if (alphaCap) {
+        pWord += upper.charAt(Math.floor(Math.random() * upper.length));
+      } else if (numbers) {
+        pWord += nums.charAt(Math.floor(Math.random() * nums.length));
+      } else if (charSpec) {
+        pWord += spec.charAt(Math.floor(Math.random() * spec.length));
       }
     }
   }

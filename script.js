@@ -7,6 +7,10 @@ var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var nums = "0123456789";
 var spec = "~!@#$%^+&*-()[/]_{:}<=>?";
 
+var allChar = lower + upper + nums + spec;
+
+var pWord = "";
+
 // User input variables
 
 var userInput = prompt(
@@ -26,9 +30,11 @@ function gerneratePassword() {
   if (userInput >= 8 && userInput <= 128) {
     for (var i = 0; i < userInput; i++) {
       if (alphaLow && alphaCap && numbers && charSpec) {
+        pWord += allChar.charAt(Math.floor(Math.random() * allChar.length));
       }
     }
   }
+  console.log(pWord);
 }
 
 // Assignment Code

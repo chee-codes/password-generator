@@ -7,9 +7,22 @@ var upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var nums = "0123456789";
 var spec = "~!@#$%^+&*-()[/]_{:}<=>?";
 
-var allChar = lower + upper + nums + spec;
-
 var pWord = "";
+
+//Combined Variables
+
+var allChar = lower + upper + nums + spec;
+var charOpA = lower + upper;
+var charOpB = lower + nums;
+var charOpC = lower + spec;
+var charOpD = upper + nums;
+var charOpE = upper + spec;
+var charOpF = nums + spec;
+//
+var charOp1 = charOpA + nums; // lower+upper+nums
+var charOp2 = charOpA + spec; // lower+upper+spec
+var charOp3 = charOpB + spec; // lower+nums+spec
+var charOp4 = charOpD + spec; // upper+nums+spec
 
 // User input variables
 
@@ -119,6 +132,8 @@ function generatePassword() {
         charSpec === true
       ) {
         pWord += charOpF.charAt(Math.floor(Math.random() * charOpF.length));
+
+        // singles
       }
     }
   }
